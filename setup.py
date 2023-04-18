@@ -14,7 +14,7 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 'utils_uiauto'
 DESCRIPTION = 'uiautomation utils and rpa utils'
-URL = 'https://github.com/Ly-star-bit/utils.git'
+URL = 'https://github.com/Ly-star-bit/utils_uiauto.git'
 EMAIL = 'a13376657928@gmail.com'
 AUTHOR = 'Yu'
 REQUIRES_PYTHON = '>=3.6.0'
