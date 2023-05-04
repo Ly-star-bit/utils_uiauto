@@ -17,8 +17,8 @@ DESCRIPTION = 'uiautomation utils and rpa utils'
 URL = 'https://github.com/Ly-star-bit/utils_uiauto.git'
 EMAIL = 'a13376657928@gmail.com'
 AUTHOR = 'Yu'
-REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.2.0'
+REQUIRES_PYTHON = '>=3.7.0'
+VERSION = '0.3.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -28,6 +28,9 @@ REQUIRED = [
 # What packages are optional?
 EXTRAS = {
     # 'fancy feature': ['django'],
+   'DD':['retrying','pathlib'],
+   'ie':['uiautomation'],
+    
 }
 
 # The rest you shouldn't have to touch too much :)
@@ -107,9 +110,9 @@ setup(
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
-    # entry_points={
-    #     'console_scripts': ['mycli=mymodule:cli'],
-    # },
+    entry_points={
+        'console_scripts': ['install_key_mouse=utils_uiauto.tools.cli:main'],
+    },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     include_package_data=True,
@@ -121,7 +124,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
